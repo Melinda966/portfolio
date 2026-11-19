@@ -1,13 +1,316 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aren Melinda Grace | UI/UX Designer & Product Designer</title>
+  
+  <!-- Fonts: Google Fonts Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Lighting Blobs -->
+  <div class="bg-glow-container">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Glass Navbar -->
+  <header class="navbar">
+    <div class="nav-container glass-panel">
+      <a href="#home" class="logo">
+        <div class="logo-badge">AG</div>
+        <span>Aren Melinda Grace</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav">Let's Talk</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div class="role-tag">
+            <span class="dot"></span>
+            <span>Available for UI/UX & Product Design Roles</span>
+          </div>
+          <h1 class="hero-title">
+            Designing <span class="gradient-text">thoughtful</span> digital experiences with precision.
+          </h1>
+          <p class="hero-bio">
+            Hi, I’m <strong>Aren Melinda Grace</strong>. I craft high-conversion user interfaces, complex SaaS workflows, and intuitive mobile journeys in Figma, transforming complex systems into effortless interactions.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>10+</h3>
+              <p>Curated Figma Case Studies</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>User-Centric Methodology</p>
+            </div>
+            <div class="stat-item">
+              <h3>End-to-End</h3>
+              <p>Design Systems & Prototyping</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glass Hero Preview Component -->
+        <div class="hero-visual reveal">
+          <div class="hero-card-preview">
+            <div class="floating-badge badge-top">
+              <div class="badge-icon" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">❖</div>
+              <div>
+                <strong style="display:block; font-size: 0.85rem;">Figma Master</strong>
+                <span style="font-size: 0.75rem; color: var(--text-dim);">Design Tokens & Auto-Layout</span>
+              </div>
+            </div>
+
+            <div class="mockup-inner">
+              <div class="mockup-header">
+                <span class="dot-btn dot-red"></span>
+                <span class="dot-btn dot-yellow"></span>
+                <span class="dot-btn dot-green"></span>
+              </div>
+              <div class="mockup-body">
+                <div class="wire-bar short"></div>
+                <div class="wire-bar mid"></div>
+                <div class="wire-card-grid">
+                  <div class="wire-card">
+                    <span style="font-size: 0.7rem; color: var(--text-dim);">FinTech App</span>
+                    <div style="height: 6px; width: 60%; background: #6366f1; border-radius: 3px;"></div>
+                  </div>
+                  <div class="wire-card">
+                    <span style="font-size: 0.7rem; color: var(--text-dim);">SaaS Dashboard</span>
+                    <div style="height: 6px; width: 80%; background: #38bdf8; border-radius: 3px;"></div>
+                  </div>
+                </div>
+                <div class="wire-bar full" style="margin-top: 10px;"></div>
+                <div class="wire-bar mid"></div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon" style="background: rgba(34, 197, 94, 0.2); color: #4ade80;">✓</div>
+              <div>
+                <strong style="display:block; font-size: 0.85rem;">Clean Architecture</strong>
+                <span style="font-size: 0.75rem; color: var(--text-dim);">Accessible & Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="section container">
+      <div class="section-header reveal">
+        <span class="section-label">Selected Works</span>
+        <h2 class="section-title">10 Signature UI/UX Projects</h2>
+        <p class="section-subtitle">A collection of end-to-end Figma design systems, interactive prototypes, and product architectures across diverse digital domains.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-container reveal">
+        <button class="filter-btn active" data-filter="all">All Projects (10)</button>
+        <button class="filter-btn" data-filter="fintech">FinTech</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="saas">SaaS & Enterprise</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="health">Healthcare</button>
+        <button class="filter-btn" data-filter="education">EdTech</button>
+        <button class="filter-btn" data-filter="web">PropTech</button>
+      </div>
+
+      <!-- Dynamic Projects Grid -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Rendered via app.js -->
+      </div>
+    </section>
+
+    <!-- Design Process Section -->
+    <section id="process" class="section container">
+      <div class="section-header reveal">
+        <span class="section-label">Methodology</span>
+        <h2 class="section-title">The Design Process</h2>
+        <p class="section-subtitle">How I take ideas from ambiguity to pixel-perfect, validated, and developer-ready design deliverables.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card glass-panel reveal">
+          <div class="process-step">01</div>
+          <h3 class="process-title">Discover & Research</h3>
+          <p class="process-desc">User interviews, competitive benchmarking, user journey mapping, and empathy building to diagnose real friction points.</p>
+        </div>
+
+        <div class="process-card glass-panel reveal">
+          <div class="process-step">02</div>
+          <h3 class="process-title">Information Architecture</h3>
+          <p class="process-desc">Creating structured site-maps, low-fidelity user flows, and wireframes to build a rock-solid structural foundation.</p>
+        </div>
+
+        <div class="process-card glass-panel reveal">
+          <div class="process-step">03</div>
+          <h3 class="process-title">Visual & Prototyping</h3>
+          <p class="process-desc">Developing component token libraries, glassmorphic visual hierarchy, micro-interactions, and realistic Figma click-through prototypes.</p>
+        </div>
+
+        <div class="process-card glass-panel reveal">
+          <div class="process-step">04</div>
+          <h3 class="process-title">Handoff & Verification</h3>
+          <p class="process-desc">Providing developer documentation, accessibility validation (WCAG), interactive state specs, and asset tokens.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="section container">
+      <div class="section-header reveal">
+        <span class="section-label">Capabilities</span>
+        <h2 class="section-title">Core Skills & Tools</h2>
+        <p class="section-subtitle">Balancing aesthetics with scalable design engineering and user empathy.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass-panel reveal">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-title">UI & Visual Design</h3>
+          <p class="skill-desc">Crafting elegant, modern interfaces with purposeful typography, balanced negative space, and sleek glassmorphic treatments.</p>
+          <div class="tag-list">
+            <span class="tag">Figma</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">Typography</span>
+            <span class="tag">Color Theory</span>
+            <span class="tag">Micro-Interactions</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel reveal">
+          <div class="skill-icon">🧠</div>
+          <h3 class="skill-title">UX Architecture</h3>
+          <p class="skill-desc">Understanding human behavior and simplifying convoluted processes into clear, intuitive step-by-step pathways.</p>
+          <div class="tag-list">
+            <span class="tag">Wireframing</span>
+            <span class="tag">User Flows</span>
+            <span class="tag">Usability Testing</span>
+            <span class="tag">Personas</span>
+            <span class="tag">WCAG 2.1</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass-panel reveal">
+          <div class="skill-icon">⚡</div>
+          <h3 class="skill-title">Interactive Prototyping</h3>
+          <p class="skill-desc">Simulating complex app states, modal interactions, transitions, and multi-device responsive adaptations.</p>
+          <div class="tag-list">
+            <span class="tag">Interactive Components</span>
+            <span class="tag">Smart Animate</span>
+            <span class="tag">Design Handoff</span>
+            <span class="tag">HTML/CSS Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="glass-panel reveal" style="padding: 48px; display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="section-label">About The Designer</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Aren Melinda Grace</h2>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 20px;">
+            I am a UI/UX designer passionate about creating digital interfaces that not only look modern and refined but also deliver real business outcomes and effortless ease of use.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 24px;">
+            From high-density B2B SaaS dashboards to consumer-facing mobile apps in fintech, commerce, and healthcare, I obsess over spacing, micro-copy, design consistency, and delightful micro-interactions.
+          </p>
+          <a href="#contact" class="btn-primary" style="display: inline-flex;">Discuss an Opportunity</a>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px;">
+          <h4 style="font-size: 1.1rem; margin-bottom: 16px; color: #fff;">Design Philosophy</h4>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="border-left: 3px solid var(--accent-indigo); padding-left: 14px;">
+              <strong style="color: #fff; font-size: 0.95rem; display: block;">Clarity over Clutter</strong>
+              <span style="font-size: 0.85rem; color: var(--text-dim);">Eliminating gratuitous graphics to let user tasks and content shine.</span>
+            </div>
+            <div style="border-left: 3px solid var(--accent-blue); padding-left: 14px;">
+              <strong style="color: #fff; font-size: 0.95rem; display: block;">System-driven Consistency</strong>
+              <span style="font-size: 0.85rem; color: var(--text-dim);">Reusable components and modular tokens that engineers love building with.</span>
+            </div>
+            <div style="border-left: 3px solid var(--accent-purple); padding-left: 14px;">
+              <strong style="color: #fff; font-size: 0.95rem; display: block;">Accessible by Default</strong>
+              <span style="font-size: 0.85rem; color: var(--text-dim);">High-contrast typography and inclusive interactions for everyone.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="section container">
+      <div class="contact-card glass-panel reveal">
+        <span class="section-label">Ready for new challenges</span>
+        <h2 class="contact-heading">Let's craft meaningful <br/><span class="gradient-text">digital experiences</span> together.</h2>
+        <p class="contact-subtitle">
+          Looking for a UI/UX Designer who bridges visual elegance with pragmatic user flow design? Let’s connect!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:arenmelindaj9c2019.2020@gmail.com" class="btn-primary">
+            <span>Send Email</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="btn-secondary">LinkedIn Profile</a>
+          <a href="https://dribbble.com" target="_blank" class="btn-secondary">Dribbble Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Case Study Details Modal -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div id="modalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        © 2026 Aren Melinda Grace. UI/UX Designer Portfolio.
+      </div>
+      <div style="color: var(--text-dim); font-size: 0.8rem;">
+        Pure HTML5 • CSS3 Glassmorphism • Vanilla JavaScript
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
 </html>
